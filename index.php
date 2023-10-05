@@ -18,7 +18,7 @@
 
     <?php
     // Kết nối đến cơ sở dữ liệu
-    $mysqli = new mysqli("localhost", "username", "password", "my_project_db");
+    require "database_help.php";
 
     // Kiểm tra kết nối
     if ($mysqli->connect_error) {
