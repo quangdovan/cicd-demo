@@ -5,6 +5,16 @@
 </head>
 <body>
     <h1>Danh sách người dùng</h1>
+    <?php
+    // Lấy tên máy chủ từ biến $_SERVER
+    $serverName = $_SERVER["SERVER_NAME"];
+    $hostname = gethostname();
+    
+    // Hiển thị tên máy chủ và hostname lên màn hình với hai dòng riêng biệt
+    echo "Tên máy chủ đang chạy là: " . $serverName . "<br>";
+    echo "Hostname của máy chủ đang chạy là: " . $hostname;
+    ?>
+
 
     <?php
     // Kết nối đến cơ sở dữ liệu
