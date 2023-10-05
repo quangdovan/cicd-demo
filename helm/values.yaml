@@ -1,0 +1,23 @@
+appName: myhelmapp
+
+labels: web
+
+containerPort: 80
+
+nodePort: 30080
+
+replicas: 3
+
+namespace: default
+
+configmap:
+  name: configmap-env
+  data:
+    DB_HOST: 192.168.109.1
+    DB_USER: quangdv
+    DB_PASSWORD: Etc@1234
+    DB_NAME: my_project_db
+
+image:
+  name: quangdv99/apache2-php
+  tag: latest
