@@ -13,7 +13,7 @@ namespace: default
 configmap:
   name: configmap-env
   data:
-    DB_HOST: 192.168.109.1
+    DB_HOST: 10.10.19.228
     DB_USER: quangdv
     DB_PASSWORD: Etc@1234
     DB_NAME: my_project_db
